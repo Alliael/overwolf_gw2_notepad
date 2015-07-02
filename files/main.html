@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700'/>
+  
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r61/three.min.js"></script>  
+    <script type="text/javascript" src="https://googledrive.com/host/0B-4noyqAgbqCTkhZRzN6ejJhM2s"></script>
+
+	<script src="overwolf-demo-app.js"></script>
+	<script>
+	  var app = require('app')
+	</script>
+  
+    <style>
+			body {
+				font-family: 'Droid Sans', arial, serif;
+				font-size: 0.8em;
+				text-align: center;
+			}
+			.title {
+				display: block;
+				border-radius: 3px;
+			}
+			.inactive-title {
+				display: none;
+				background-color: #aaaaaa;
+			}
+			.active-title {
+				background-color: #cccccc;
+			}
+			#title {
+				position: absolute;
+			}
+			#container {
+				position: absolute;
+			}
+    </style>
+		
+  </head>
+  <body>    
+    
+    <div id="content">    
+        <div id='title' class='inactive-title title'>WebGL Clock</div>
+        <div id='container'></div>    
+    </div>
+    
+	<script>
+	    app.start()
+	</script>
+	
+  </body>
+</html>

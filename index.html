@@ -1,0 +1,41 @@
+
+
+     
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <script>
+            function dragResize(edge){
+			console.log('plop');
+                overwolf.windows.getCurrentWindow(function(result){
+					console.log(result);
+                    if (result.status=="success"){
+                        overwolf.windows.dragResize(result.window.id, edge);
+                    }
+                });
+            };
+            
+            function dragMove(){
+                overwolf.windows.getCurrentWindow(function(result){
+                    if (result.status=="success"){
+                        overwolf.windows.dragMove(result.window.id);
+                    }
+                });
+            };
+            
+            function closeWindow(){
+                overwolf.windows.getCurrentWindow(function(result){
+                    if (result.status=="success"){
+                        overwolf.windows.close(result.window.id);
+                    }
+                });
+            };
+        </script>
+    
+
+    
+        <div style="width:20px; height:20px; bottom:0; right:0; position:absolute;background:red;" onmousedown="dragResize('BottomRight');"></div>
+        <div id="content" onmousedown="dragMove();" style="background-color:silver">
+            <h1>Hello, world!</h1>
+            <p>You can drag from anywhere you want, and resize from bottom right corner.</p>
+            <button id="close" onclick="closeWindow();">Close</button>
+        </div>
+    
