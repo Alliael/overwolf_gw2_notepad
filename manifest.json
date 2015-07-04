@@ -18,8 +18,8 @@
                 "transparent": true,
                 "resizable": false,
                 "size": {
-                    "width": 300,
-                    "height": 290
+                    "width": 20,
+                    "height":20
                 },
                 "min_size": {
                     "width": 300,
@@ -28,6 +28,23 @@
                 "max_size": {
                     "width": 300,
                     "height": 290
+                }
+			},
+            "SubWindow": {
+                "file": "main.html",
+                "transparent": true,
+                "resizable": true,
+                "size": {
+					"width": 300,
+					"height": 300
+				},
+				"min_size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "max_size": {
+                    "width": 600,
+                    "height": 600
                 }
             }
         }
