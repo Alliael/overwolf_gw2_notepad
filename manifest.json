@@ -11,27 +11,19 @@
         "minimum-overwolf-version": "0.77.10.0"
     },
     "data": {
-        "start_window": "MainWindow",
+        "start_window": "MinizeIcon",
         "windows": {
-            "MainWindow": {
-                "file": "index.html",
+            "MinizeIcon": {
+                "file": "files/minimizeIcon.html",
                 "transparent": true,
                 "resizable": false,
                 "size": {
                     "width": 20,
                     "height":20
-                },
-                "min_size": {
-                    "width": 300,
-                    "height": 290
-                },
-                "max_size": {
-                    "width": 300,
-                    "height": 290
                 }
 			},
-            "SubWindow": {
-                "file": "main.html",
+            "GlobalPanel": {
+                "file": "files/globalPanel.html",
                 "transparent": true,
                 "resizable": true,
                 "size": {
